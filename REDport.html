@@ -1,21 +1,19 @@
 <head>
     <title>CodeCrafter's</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
 
 <body class="bg-[url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1280&h=750&dpr=2')] backdrop-brightness-50 backdrop-blur-md snap-y snap-mandatory ">
     <nav
-        class="ease-in-out duration-300 bg-gray-600 flex flex-wrap justify-between p-2 rounded-b-lg border-orange-500 border-spacing-1 text-3xl h-20 max-sm:h-40 max-[468px]:h-60 snap-always shadow-md backdrop-blur-lg">
-        <a href="index.html"><img src="./assets/imgRED/codecrafter.png"
+        class="ease-in-out duration-300 bg-gray-600/30 flex flex-wrap justify-between p-2 rounded-b-lg border-orange-500 border-spacing-1 text-3xl h-20 max-sm:h-40 max-[500px]:h-60 snap-always shadow-md backdrop-blur-lg">
+        <a href="index.html"><img src="https://shorturl.at/gIOS0"
                 class="ease-in-out duration-300 scale-50 h-20 relative hover:scale-100 hover:rotate-6" alt="#"></a>
         <div class="ease-in-out duration-300 flex flex-row flex-wrap rounded-lg p-3 scale-75 font-bold space-x-2 ">
-            <a class="ease-in-out duration-300 p-2 bg-red-500 rounded-lg hover:scale-90 hover:rotate-3 text-white shadow-md"
+            <a class="ease-in-out duration-300 p-2 bg-red-500/60 rounded-lg hover:scale-90 hover:rotate-3 text-white shadow-md"
                 href="#info">Info</a>
-            <a class="ease-in-out duration-300 p-2 bg-white rounded-lg hover:scale-90 hover:rotate-3 text-red-600 shadow-md"
+            <a class="ease-in-out duration-300 p-2 rounded-lg hover:scale-90 hover:rotate-3 text-white shadow-md hover:bg-white hover:text-red-500"
                 href="#certificate">Crtificreate</a>
-            <a class="ease-in-out duration-300 p-2 bg-white rounded-lg hover:scale-90 hover:rotate-3 text-red-600 shadow-md"
+            <a class="ease-in-out duration-300 p-2 rounded-lg hover:scale-90 hover:rotate-3 text-white shadow-md hover:bg-white hover:text-red-500"
                 href="#contect">Contect</a>
         </div>
     </nav>
@@ -24,8 +22,8 @@
     <div id="info" class="ease-in-out duration-700 flex items-center justify-center mt-10 hover:rotate-2 snap-always ">
         <div
             class="flex flex-col items-center w-[400px] h-[700px] rounded-xl border-orange-500 border-2 bg-gradient-to-t from-[#232526] to-[#414345] shadow-md ">
-            <h1 class="font-bold text-center m-3 text-3xl text-red-500">INFO</h1>
-            <img src="./assets/imgRED/me.jpg" alt="#" class="w-auto h-96 text-center rounded-sm">
+            <h1 class="font-bold text-center m-3 text-3xl text-red-500 py-">INFO</h1>
+            <img src="https://shorturl.at/DIQ09" alt="#" class="w-auto h-96 text-center rounded-sm">
             <div class="mt-7">
                 <p class="font-medium text-white">NAME : Supakorn Pipithgul</p>
                 <p class="font-medium text-white">INTRA NAME : spipithg </p>
@@ -42,17 +40,20 @@
     </div>
     
     <!-- certificate -->
-    <div id="certificate"
-        class="flex flex-col  items-center justify-center h-96 scale-90 rounded-md bg-slate-600 mt-20 snap-always max-[700px]:h-full backdrop-blur-lg pb-10">
-        <h1 class="text-center m-4 font-bold text-3xl text-white">- Certificate -</h1>
-        <div class=" flex  w-96 items-center justify-center space-x-5  max-[700px]:flex-wrap ">
-            <img src="assets/imgRED/cer2.jpg" alt="#" class="ease-in-out duration-700 h-80 w-auto hover:scale-110 ">
-            <img src="assets/imgRED/cer1.jpg" alt="#" class="ease-in-out duration-700 h-80 w-auto hover:scale-110">
+    <div class="ease-in-out duration-300 flex items-center justify-center text-center">
+        <div id="certificate"
+        class="ease-in-out duration-300 flex flex-col  items-center justify-center scale-90 rounded-md bg-slate-600/20 mt-20 snap-always max-[700px]:h-full backdrop-blur-lg pb-10 min-[857px]:w-[900px] max-[857px]:w-[900px]">
+        <h1 class="text-center m-4 font-bold text-3xl text-white pt-4">- Certificate -</h1>
+        <div class=" ease-in-out duration-300 flex w-96 items-center justify-center space-x-5  max-[700px]:flex-wrap max-[900px]:scale-75">
+            <img src="https://shorturl.at/lxyST" alt="#" class="ease-in-out duration-700 h-80 w-auto hover:scale-110 ">
+            <img src="https://shorturl.at/aBDQT" alt="#" class="ease-in-out duration-700 h-80 w-auto hover:scale-110">
         </div>
     </div>
 
+    </div>
+  
     <!-- contect -->
-    <div id="contect" class="p-5 mt-20 bg-gray-800 text-white snap-always">
+    <div id="contect" class="p-5 mt-20 bg-gray-800/90 text-white snap-always">
         <h1 class="text-center font-bold text-lg">Contect</h1>
         <a href="https://www.instagram.com/_redfriend_/">
             <p>IG : _redfriend_</p>
@@ -69,28 +70,3 @@
         scroll-behavior: smooth;
     }
 </style>
-
-<script>
-    $(document).ready(function () {
-
-        $("a").on('click', function (event) {
-
-
-            if (this.hash !== "") {
-
-                event.preventDefault();
-
-
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 300, function () {
-
-
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
