@@ -7,6 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
     <link href='/assets/snow.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="liked-checking.js"></script>
+    <script type="text/javascript" src="like-send.js"></script>
 </head>
 
 <body>
@@ -108,6 +111,13 @@
                         Hello!
                     </h1>
                     <h4 class="text-white text-[40px] font-bold">I'm Kan .</h4>
+                    <button onclick="likesend()">
+                        <div id="likebutton"
+                            class="rounded-[40px] mt-[10px] p-[5px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
+                            <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
+                                    class="fa fa-heart-o mr-2"></i>.. Like me</h4>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div>
@@ -191,7 +201,11 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in making Opensource in
-                                the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where everyone can rate their places on our website. Then it was arranged into tiers for each area of ​​Thailand. To make it easier for people who want to find a new place to live and for people with responsibilities to make changes. Let's work together to fix communities with low tiers. #2023</h1>
+                                the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where everyone
+                                can rate their places on our website. Then it was arranged into tiers for each area of
+                                ​​Thailand. To make it easier for people who want to find a new place to live and for
+                                people with responsibilities to make changes. Let's work together to fix communities
+                                with low tiers. #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
                         </div>
@@ -245,7 +259,11 @@
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Participate in making Opensource in
-                                    the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where everyone can rate their places on our website. Then it was arranged into tiers for each area of ​​Thailand. To make it easier for people who want to find a new place to live and for people with responsibilities to make changes. Let's work together to fix communities with low tiers. #2023</h1>
+                                    the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where
+                                    everyone can rate their places on our website. Then it was arranged into tiers for
+                                    each area of ​​Thailand. To make it easier for people who want to find a new place
+                                    to live and for people with responsibilities to make changes. Let's work together to
+                                    fix communities with low tiers. #2023</h1>
                             </center>
                         </div>
                         <div
@@ -276,13 +294,15 @@
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced learning and industry methods from AMI KMITL. #2022</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced
+                                learning and industry methods from AMI KMITL. #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create Deep Learning AI. #2022</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create
+                                Deep Learning AI. #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
                         </div>
@@ -295,14 +315,17 @@
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming competition, new version. Age 18 years
-                                which is a part Part of the national competition, National Coding Challenge, at National Coding Day #2023</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming
+                                competition, new version. Age 18 years
+                                which is a part Part of the national competition, National Coding Challenge, at National
+                                Coding Day #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Winner of the high school programming competition during Science Day Week, Sarawittaya School. #2023</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Winner of the high school programming
+                                competition during Science Day Week, Sarawittaya School. #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
                         </div>
@@ -326,7 +349,8 @@
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced learning and industry methods from AMI KMITL. #2022</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced learning
+                                    and industry methods from AMI KMITL. #2022</h1>
                             </center>
                         </div>
                         <div
@@ -335,7 +359,8 @@
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create Deep Learning AI. #2022</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create Deep
+                                    Learning AI. #2022</h1>
                             </center>
                         </div>
                         <div
@@ -354,8 +379,10 @@
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming competition, new version. Age 18 years
-                                    which is a part Part of the national competition, National Coding Challenge, at National Coding Day #2023</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming
+                                    competition, new version. Age 18 years
+                                    which is a part Part of the national competition, National Coding Challenge, at
+                                    National Coding Day #2023</h1>
                             </center>
                         </div>
                         <div
@@ -364,7 +391,8 @@
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">Winner of the high school programming competition during Science Day Week, Sarawittaya School. #2023</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">Winner of the high school programming
+                                    competition during Science Day Week, Sarawittaya School. #2023</h1>
                             </center>
                         </div>
                     </div>
@@ -378,7 +406,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
-                                target="_blank" class="w-[50%] mr-[20px] text-white text-[20px]">I create World and Avatar with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
+                                target="_blank" class="w-[50%] mr-[20px] text-white text-[20px]">I create World and
+                                Avatar with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
                                 target="_blank">
@@ -415,11 +444,12 @@
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <a href="http://bilishare.tensormik.com"
-                                target="_blank" class="w-[50%] mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can build your anime to social media story via Apple Shortcuts. Developed by NodeJS #2023</a>
+                            <a href="http://bilishare.tensormik.com" target="_blank"
+                                class="w-[50%] mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can
+                                build your anime to social media story via Apple Shortcuts. Developed by NodeJS
+                                #2023</a>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <a href="http://bilishare.tensormik.com"
-                                target="_blank">
+                            <a href="http://bilishare.tensormik.com" target="_blank">
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
                             </a>
                         </div>
@@ -443,7 +473,8 @@
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
-                                    target="_blank" class="mr-[20px] text-white text-[20px]">I create World and Avatar with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
+                                    target="_blank" class="mr-[20px] text-white text-[20px]">I create World and Avatar
+                                    with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
                             </center>
                         </div>
                         <div
@@ -485,14 +516,15 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <a href="http://bilishare.tensormik.com"
-                                    target="_blank">
+                                <a href="http://bilishare.tensormik.com" target="_blank">
                                     <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
                                 </a>
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <a href="http://bilishare.tensormik.com"
-                                    target="_blank" class="mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can build your anime to social media story via Apple Shortcuts. Developed by NodeJS #2023</a>
+                                <a href="http://bilishare.tensormik.com" target="_blank"
+                                    class="mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can
+                                    build your anime to social media story via Apple Shortcuts. Developed by NodeJS
+                                    #2023</a>
                             </center>
                         </div>
                         <div
@@ -609,6 +641,53 @@
         handleScroll(); // Call it once to set the initial state based on the current scroll position
         window.addEventListener('scroll', handleScroll);
     });
+
+    //Like button
+    const likeBTN = document.getElementById("likebutton")
+    const liketext = document.getElementById("liketext")
+    likeSendApi('count', function (likeValue) {
+        var isLike = getCookie("liked-check")
+        if (isLike == 'True') {
+            try {
+                liketext.classList.replace("text-white", "text-red-500")
+            } catch { }
+            liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;; //Set new content when liked
+            likeBTN.classList.add("bg-white")
+        } else {
+            try {
+                liketext.classList.replace("text-red-500", "text-white")
+            } catch { }
+            liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; //Set new content when unliked
+            likeBTN.classList.remove("bg-white")
+        }
+    });
+
+    //LikeSend
+    function likesend() {
+        var isLikeToggle = getCookie("liked-check")
+
+        if (isLikeToggle == 'True') {
+            //for unlike (unavailable)
+
+            // try {
+            //     liketext.classList.replace("text-red-500", "text-white")
+            // } catch { }
+            // liketext.innerHTML = '<i id="likeicon" class="fa fa-heart-o mr-2"></i>Like me'; //Set new content when unliked
+            // likeBTN.classList.remove("bg-white")
+        } else {
+            setCookie("liked-check", "True", 30);
+
+            try {
+                liketext.classList.replace("text-white", "text-red-500")
+            } catch { }
+            liketext.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
+            likeBTN.classList.add("bg-white")
+
+            likeSendApi('like', function (likeValue) {
+                    liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+            });
+        }
+    }
 
 </script>
 
