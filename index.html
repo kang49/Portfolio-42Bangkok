@@ -660,6 +660,7 @@
             liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; //Set new content when unliked
             likeBTN.classList.remove("bg-white")
         }
+        likeSendApi('visit', function (visitvalue) {});
     });
 
     //LikeSend
