@@ -111,7 +111,7 @@
                         Hello!
                     </h1>
                     <h4 class="text-white text-[40px] font-bold">I'm Kan .</h4>
-                    <button onclick="likesend()">
+                    <button onclick="likesend()" class="lg:hidden">
                         <div id="likebutton"
                             class="rounded-[40px] mt-[10px] p-[5px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
                             <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
@@ -122,7 +122,14 @@
             </div>
             <div>
                 <div class="px-[10px] h-10px mt-[50px] lg:mt-[350px]">
-                    <center>
+                    <button onclick="likesend()" class="lg: block">
+                        <div id="likebutton"
+                            class="rounded-[40px] ml-[50px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
+                            <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
+                                    class="fa fa-heart-o mr-2"></i>.. Like me</h4>
+                        </div>
+                    </button>
+                    <center class="lg:mt-[50px]">
                         <div class="bg-white/40 h-[3px] w-[90%] rounded-full"></div>
                     </center>
                 </div>
@@ -660,7 +667,7 @@
             liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; //Set new content when unliked
             likeBTN.classList.remove("bg-white")
         }
-        likeSendApi('visit', function (visitvalue) {});
+        likeSendApi('visit', function (visitvalue) { });
     });
 
     //LikeSend
@@ -685,7 +692,7 @@
             likeBTN.classList.add("bg-white")
 
             likeSendApi('like', function (likeValue) {
-                    liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
             });
         }
     }
