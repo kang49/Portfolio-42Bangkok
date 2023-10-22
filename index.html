@@ -40,6 +40,9 @@
 
         </div>
     </div>
+
+
+    <!--NAVBAR-->
     <div class="h-max min-h-screen bg-gradient-to-tr from-[#C33764] to-[#1D2671] prompt-font">
         <div id="navbar" class="bg-white/10 fixed w-full transition-all duration-[1200ms]">
             <div class="flex justify-between min-h-[60px] items-center px-10 border-1">
@@ -67,14 +70,14 @@
             <div id="mobileMenu"
                 class="lg:hidden justify-center text-center text-white transition-all duration-200 h-[0px] overflow-hidden">
                 <div>
-                    <a href="/">
+                    <a href="#toppage" onclick="closeMobileMenu()"s>
                         Home</a>
                 </div>
                 <div class="mt-2">
-                    <a href="/KeenPort.html">Kan</a>
+                    <a href="/KeenPort.html" onclick="closeMobileMenu()">Kan</a>
                 </div>
                 <div class="mt-2">
-                    <a href="/REDport.html">Tong Tong</a>
+                    <a href="#aboutme" onclick="closeMobileMenu()">About me</a>
                 </div>
             </div>
         </div>
@@ -132,6 +135,9 @@
                 <div class="bg-white/40 h-[3px] w-[90%] mt-[50px] rounded-full"></div>
             </center>
         </div>
+
+
+        <!--OUR STORY CARD-->
         <div class="px-[10px] lg:px-[150px]">
             <div id="storyCard"
                 class="bg-black/20 rounded-[40px] mt-[50px] h-max transition-all duration-200 px-[20px] py-[50px] lg:px[50px]">
@@ -267,6 +273,15 @@
 
             }
         }
+    }
+
+    //Close mobile menu after press some button
+    function closeMobileMenu() {
+        mobileMenu.classList.replace("h-[100px]", "h-[0px]")
+
+        h1.classList.remove("rotate-45", "translate-y-[9px]")
+        h2.classList.remove("opacity-0")
+        h3.classList.remove("-rotate-45", "-translate-y-[7px]")
     }
 
     //Read More Story
