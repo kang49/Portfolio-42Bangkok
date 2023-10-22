@@ -51,10 +51,19 @@
                 </div>
                 <nav class="items-center gap-[30px] text-white font-bold hidden lg:flex">
                     <div>
-                        <a href="#aboutme">About me</a>
+                        <a href="#contact">Contact</a>
                     </div>
                     <div>
-                        <a href="#toppage">Kan</a>
+                        <a href="#project">Project</a>
+                    </div>
+                    <div>
+                        <a href="#certificate">Certificate</a>
+                    </div>
+                    <div>
+                        <a href="#activities">Activities</a>
+                    </div>
+                    <div>
+                        <a href="#aboutme">About me</a>
                     </div>
                     <div>
                         <a href="#toppage">Home</a>
@@ -67,23 +76,32 @@
                 </button>
             </div>
             <div id="mobileMenu"
-                class="lg:hidden justify-center text-center text-white transition-all duration-200 h-[0px] overflow-hidden">
+                class="lg:hidden justify-center space-y-2 text-center text-white transition-all duration-200 h-[0px] overflow-hidden">
                 <div>
-                    <a href="#toppage" onclick="closeMobileMenu()"s>
+                    <a href="#toppage" onclick="closeMobileMenu()">
                         Home</a>
                 </div>
-                <div class="mt-2">
-                    <a href="/KeenPort.html" onclick="closeMobileMenu()">Kan</a>
+                <div>
+                    <a href="#activities" onclick="closeMobileMenu()">
+                        Activities</a>
                 </div>
-                <div class="mt-2">
-                    <a href="#aboutme" onclick="closeMobileMenu()">About me</a>
+                <div>
+                    <a href="#certificate" onclick="closeMobileMenu()">
+                        Certificate</a>
+                </div>
+                <div>
+                    <a href="#project" onclick="closeMobileMenu()">
+                        Project</a>
+                </div>
+                <div>
+                    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
                 </div>
             </div>
         </div>
 
         <div id="toppage">
             <div class="pt-[150px] lg:ml-[200px] lg:pt-[100px]">
-                <img class="w-[350px] pt-[90px] absolute object-contain lg:w-[500px]" src="assets/img/my-pic.png">
+                <img class="w-[350px] object-contain lg:w-[500px] lg:pt-[90px] lg:absolute" src="assets/img/my-pic.png">
                 <div class="ml-[30px] pt-[60px] lg:ml-[350px]">
                     <h1
                         class="text-[#B5F2FF] font-bold text-[70px] drop-shadow-[0_0px_10px_rgba(181,242,255,1)] lg:text-[100px]">
@@ -93,7 +111,7 @@
                 </div>
             </div>
             <div>
-                <div class="px-[10px] h-10px mt-[250px] lg:mt-[350px]">
+                <div class="px-[10px] h-10px mt-[50px] lg:mt-[350px]">
                     <center>
                         <div class="bg-white/40 h-[3px] w-[90%] rounded-full"></div>
                     </center>
@@ -141,7 +159,7 @@
 
 
                     <!--ACTIVITIES-->
-                    <h1 class="text-white text-[30px] mt-[90px] font-bold">My Activities</h1>
+                    <h1 id="activities" class="text-white text-[30px] mt-[90px] font-bold">My Activities</h1>
                     <h4 class="text-white/40 mt-[30px]">This's my activities is i done</h4>
 
                     <!--My Activities Desktop-->
@@ -227,7 +245,7 @@
 
 
                     <!--CERTIFICATE-->
-                    <h1 class="text-white text-[30px] mt-[90px] font-bold">Certificate</h1>
+                    <h1 id="certificate" class="text-white text-[30px] mt-[90px] font-bold">Certificate</h1>
                     <h4 class="text-white/40 mt-[30px]">This's my certificate i got.</h4>
                     <!--Cartificate Desktop-->
                     <div class="space-y-[50px] mt-[50px] hidden lg:block">
@@ -273,7 +291,7 @@
 
 
                     <!--PROJECT-->
-                    <h1 class="text-white text-[30px] mt-[90px] font-bold">Project</h1>
+                    <h1 id="project" class="text-white text-[30px] mt-[90px] font-bold">Project</h1>
                     <h4 class="text-white/40 mt-[30px]">This's my project or side project i ever do it.</h4>
                     <!--Project Desktop-->
                     <div class="space-y-[50px] mt-[50px] hidden lg:block">
@@ -308,7 +326,7 @@
 
 
                     <!--CONTACT-->
-                    <h1 class="text-white text-[30px] mt-[90px] font-bold">My Contact</h1>
+                    <h1 id="contact" class="text-white text-[30px] mt-[90px] font-bold">My Contact</h1>
                     <h4 class="text-white/40 mt-[30px]">Want to contect me? Here this.</h4>
                     <div class="mt-[50px] rounded-[36px] max-w-[470px] py-2">
                         <div class="max-w-[400px] grid grid-cols-5 my-[20px]">
@@ -370,14 +388,14 @@
     function hamberBTN() {
         isToggleMenu = !isToggleMenu
         if (isToggleMenu) {
-            mobileMenu.classList.replace("h-[0px]", "h-[100px]")
+            mobileMenu.classList.replace("h-[0px]", "h-[200px]")
 
             h1.classList.add("rotate-45", "translate-y-[9px]")
             h2.classList.add("opacity-0")
             h3.classList.add("-rotate-45", "-translate-y-[7px]")
         }
         else {
-            mobileMenu.classList.replace("h-[100px]", "h-[0px]")
+            mobileMenu.classList.replace("h-[200px]", "h-[0px]")
 
             h1.classList.remove("rotate-45", "translate-y-[9px]")
             h2.classList.remove("opacity-0")
@@ -387,7 +405,8 @@
 
     //Close mobile menu after press some button
     function closeMobileMenu() {
-        mobileMenu.classList.replace("h-[100px]", "h-[0px]")
+        isToggleMenu = !isToggleMenu
+        mobileMenu.classList.replace("h-[200px]", "h-[0px]")
 
         h1.classList.remove("rotate-45", "translate-y-[9px]")
         h2.classList.remove("opacity-0")
