@@ -2,11 +2,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Kan Aramrak Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
     <link href='/assets/snow.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="liked-checking.js"></script>
+    <script type="text/javascript" src="like-send.js"></script>
 </head>
 
 <body>
@@ -43,22 +46,30 @@
 
 
     <!--NAVBAR-->
-    <div class="h-max min-h-screen bg-gradient-to-tr from-[#C33764] to-[#1D2671] prompt-font">
+    <div class="min-h-screen bg-gradient-to-tr from-[#C33764] to-[#1D2671] prompt-font">
         <div id="navbar" class="bg-white/10 fixed w-full transition-all duration-[1200ms]">
             <div class="flex justify-between min-h-[60px] items-center px-10 border-1">
                 <div>
-                    <a class="text-white font-bold" href="/">Our Portfolio .</a>
+                    <a class="text-white font-bold" href="/">Kan Aramrak .</a>
                 </div>
                 <nav class="items-center gap-[30px] text-white font-bold hidden lg:flex">
                     <div>
-                        <a href="/REDport.html">
-                            Tong Tong</a>
+                        <a href="#contact">Contact</a>
                     </div>
                     <div>
-                        <a href="/KeenPort.html">Kan</a>
+                        <a href="#project">Project</a>
                     </div>
                     <div>
-                        <a href="/">Home</a>
+                        <a href="#certificate">Certificate</a>
+                    </div>
+                    <div>
+                        <a href="#activities">Activities</a>
+                    </div>
+                    <div>
+                        <a href="#aboutme">About me</a>
+                    </div>
+                    <div>
+                        <a href="#toppage">Home</a>
                     </div>
                 </nav>
                 <button class="lg:hidden grid gap-1 mt-1 bg-black/10 p-2 rounded-md" onclick="hamberBTN()">
@@ -68,160 +79,469 @@
                 </button>
             </div>
             <div id="mobileMenu"
-                class="lg:hidden justify-center text-center text-white transition-all duration-200 h-[0px] overflow-hidden">
+                class="lg:hidden justify-center space-y-2 text-center text-white transition-all duration-200 h-[0px] overflow-hidden">
                 <div>
-                    <a href="#toppage" onclick="closeMobileMenu()"s>
+                    <a href="#toppage" onclick="closeMobileMenu()">
                         Home</a>
                 </div>
-                <div class="mt-2">
-                    <a href="/KeenPort.html" onclick="closeMobileMenu()">Kan</a>
-                </div>
-                <div class="mt-2">
-                    <a href="#aboutme" onclick="closeMobileMenu()">About me</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="pt-[100px]">
-            <div class="flex justify-center items-center space-x-[10px] max-h-[450px]">
-                <a href="/KeenPort.html">
-                    <div
-                        class="bg-gradient-to-br from-[#614385] to-[#516395] rounded-[10px] px-2 py-4 drop-shadow-[0_0px_5px_rgba(181,242,255,1)] transition-all duration-400 hover:scale-[105%]">
-                        <img class="w-[130px] rounded-[20px] lg:w-[250px]"
-                            src="https://user-images.githubusercontent.com/81503963/252177144-eea03294-af3a-4a10-a5c3-aebb2e61c747.png">
-                        <h4 class="text-white text-[15px] mt-1 lg:text-[30px]">Kan</h4>
-                        <h4 class="text-white text-[10px] opacity-50 mt-[1px] lg:text-[17px]">Kankawee Aramrak</h4>
-                        <div class="flex justify-end">
-                            <div class="bg-white/40 rounded-[10px]  py-1 px-1 space-x-1 flex mt-[25px]">
-                                <a href="https://discord.com/users/605305608085831681"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqyrpf.png"></a>
-                                <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqy63J.png"></a>
-                                <a href="https://github.com/kang49"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqynbb.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/REDport.html">
-                    <div
-                        class="bg-gradient-to-br from-[#614385] to-[#516395] rounded-[10px] px-2 py-4 drop-shadow-[0_0px_5px_rgba(181,242,255,1)] transition-all duration-400 hover:scale-[105%]">
-                        <img class=" w-[130px] rounded-[20px] lg:w-[250px]" src="/assets/imgRED/me.jpg">
-                        <h4 class="text-white text-[15px] mt-1 lg:text-[30px]">Tong Tong</h4>
-                        <h4 class="text-white text-[10px] opacity-50 mt-[1px] lg:text-[17px]">Supakorn Pipithgul</h4>
-                        <div class="flex justify-end">
-                            <div class="bg-white/40 rounded-[10px]  py-1 px-1 space-x-1 flex mt-[25px]">
-                                <a href="https://discord.com/users/503594954506108948"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqyrpf.png"></a>
-                                <a
-                                    href="https://mail.google.com/mail/u/2/?ogbl#inbox?compose=CllgCKCGmTtsgrqWmkQbbzsXRNrNRrNMDhsXklLPrrMMckRJpVwBxhBtprRdPbbRKdsFSPcFPDB"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqy63J.png"></a>
-                                <a href="https://github.com/1REDfriend"><img
-                                        class="w-[15px] rounded-[4px] object-contain lg:w-[30px] lg:rounded-[10px]"
-                                        src="https://sv1.picz.in.th/images/2023/10/20/ddqynbb.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> <!--row1-->
-        <div class="px-[10px] h-10px">
-            <center>
-                <div class="bg-white/40 h-[3px] w-[90%] mt-[50px] rounded-full"></div>
-            </center>
-        </div>
-
-
-        <!--OUR STORY CARD-->
-        <div class="px-[10px] lg:px-[150px]">
-            <div id="storyCard"
-                class="bg-black/20 rounded-[40px] mt-[50px] h-max transition-all duration-200 px-[20px] py-[50px] lg:px[50px]">
                 <div>
-                    <div class="justify-center items-center mr-[300px] w-full">
-                        <h4 class="text-white text-[30px] font-bold">Our Story</h4>
-                        <h1 class="text-white/40">What have we done together?</h1>
-                        <div class="my-[30px]">
-                            <button id="readmore" class="text-white" onclick="readMoreMenuBTN()">Read more</button>
+                    <a href="#activities" onclick="closeMobileMenu()">
+                        Activities</a>
+                </div>
+                <div>
+                    <a href="#certificate" onclick="closeMobileMenu()">
+                        Certificate</a>
+                </div>
+                <div>
+                    <a href="#project" onclick="closeMobileMenu()">
+                        Project</a>
+                </div>
+                <div>
+                    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="toppage">
+            <div class="pt-[150px] lg:ml-[200px] lg:pt-[100px]">
+                <img class="w-[350px] object-contain lg:w-[500px] lg:pt-[90px] lg:absolute" src="assets/img/my-pic.png">
+                <div class="ml-[30px] pt-[60px] lg:ml-[350px]">
+                    <h1
+                        class="text-[#B5F2FF] font-bold text-[70px] drop-shadow-[0_0px_10px_rgba(181,242,255,1)] lg:text-[100px]">
+                        Hello!
+                    </h1>
+                    <h4 class="text-white text-[40px] font-bold">I'm Kan .</h4>
+                    <button onclick="likesend()" class="lg:hidden">
+                        <div id="likebutton_mobile"
+                            class="rounded-[40px] mt-[10px] p-[5px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
+                            <h4 id="liketext_mobile" class="flex items-center text-white"><i id="likeicon"
+                                    class="fa fa-heart-o mr-2"></i>.. Like me</h4>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="px-[10px] h-10px mt-[50px] lg:mt-[350px]">
+                    <button onclick="likesend()" class="lg:block hidden">
+                        <div id="likebutton_desktop"
+                            class="rounded-[40px] lg:ml-[50px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
+                            <h4 id="liketext_desktop" class="flex items-center text-white"><i id="likeicon"
+                                    class="fa fa-heart-o mr-2"></i>.. Like me</h4>
+                        </div>
+                    </button>
+                    <center class="lg:mt-[50px]">
+                        <div class="bg-white/40 h-[3px] w-[90%] rounded-full"></div>
+                    </center>
+                </div>
+
+                <!--CONTENT-->
+                <div id="content" class="px-5 mt-[30px] lg:px-[200px]">
+                    <h1 class="text-white text-[30px] mt-[90px] font-bold">Discord Realtime Status</h1>
+                    <h4 class="text-white/40 mt-[30px]">What am i doing?</h4>
+
+                    <img class="w-max h-max rounded-[20px] py-[10px] ml-[10px] mt-[30px] lg:max-w-[50%] lg:w-[70%]"
+                        src="https://lanyard.cnrad.dev/api/605305608085831681?theme=light&bg=dbecf6&animated=false&hideDiscrim=true&borderRadius=30px&showDisplayName=true">
+
+                    <h4 id="aboutme" class="text-white/40 mt-[50px]">Who am i ?</h4>
+                    <h1 class="text-white text-[30px] font-bold">About me</h1>
+                    <h4 class="text-white/40 mt-[30px]">Hello my name is Kankawee Aramrak. From now on, this is
+                        information about me. Are you ready to get to know me better? ;)</h4>
+                    <div class="bg-white/20 w-[70%] rounded-[20px] py-[10px] ml-[10px] mt-[30px]">
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Name: Kankawee Aramrak</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Nickname: Kan</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Birth Day: 07 January 2006</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Age: 17</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Nationality: Thai</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Study Plan: Mathematics-English Program</h4>
+                    </div>
+
+
+                    <h1 class="text-white text-[30px] mt-[90px] font-bold">Hobby</h1>
+                    <h4 class="text-white/40 mt-[30px]">Next is a my hobby. Actually, even though I really like writing
+                        code, it's true. But I don't code all the time.</h4>
+                    <div class="bg-white/20 w-[70%] rounded-[20px] py-[10px] ml-[10px] mt-[30px]">
+                        <h1 class="text-white font-bold text-[25px] ml-[10px] lg:ml-[30px]">Meaningful</h1>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Coding</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Make animation</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Conputer repairing</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Make 3D Metaverse</h4>
+
+                        <h1 class="text-white font-bold text-[25px] mt-[20px] ml-[10px] lg:ml-[30px]">! Meaningful</h1>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Anime and Waifu is my life</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Playing a Genshin Impact</h4>
+                        <h4 class="text-white ml-[10px] lg:ml-[30px]">Join my friends's Discord but silent</h4>
+                    </div>
+
+
+
+
+                    <!--ACTIVITIES-->
+                    <h1 id="activities" class="text-white text-[30px] mt-[90px] font-bold">My Activities</h1>
+                    <h4 class="text-white/40 mt-[30px]">This's my activities is i done</h4>
+
+                    <!--My Activities Desktop-->
+                    <div class="space-y-[50px] mt-[50px] hidden lg:block">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Enter the KMITL OpenHouse activity
+                                Training on AI and Robotics #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Entered the final round of the AI
+                                creation competition.
+                                AMI-Hackathon#2 national level
+                                In the finals on behalf of the TensorMiK team #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Attend training on the Azure Cloud
+                                system
+                                with Microsoft Thailand. #2023</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in making Opensource in
+                                the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where everyone
+                                can rate their places on our website. Then it was arranged into tiers for each area of
+                                ​​Thailand. To make it easier for people who want to find a new place to live and for
+                                people with responsibilities to make changes. Let's work together to fix communities
+                                with low tiers. #2023</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in Coding skills training
+                                with 42Bangkok Discovery Piscine #2023</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.png">
                         </div>
                     </div>
 
-                    <!--Stroy Content for Desktop-->
-                    <div id="ourStoryContent_desktop" class="space-y-[50px] hidden">
-                        <div class="hidden lg:block">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                                <h1 class="w-[50%] mr-[20px] text-white text-[20px]">We participated in the competition
-                                    on National Coding Day 2023.</h1>
-                                <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/national-coding.JPG">
-                            </div>
+                    <!--My Activities Mobile-->
+                    <div class="space-y-[50px] mt-[50px] lg:hidden">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Enter the KMITL OpenHouse activity
+                                    Training on AI and Robotics #2022</h1>
+                            </center>
                         </div>
-                        <div class="hidden lg:block">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                                <h1 class="w-[50%] mr-[20px] text-white text-[20px]">We invited each other to join in
-                                    working on a project at the Bangkok Opensource Hackathon.</h1>
-                                <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Entered the final round of the AI
+                                    creation competition.
+                                    AMI-Hackathon#2 national level
+                                    In the finals on behalf of the TensorMiK team #2022</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Attend training on the Azure Cloud system
+                                    with Microsoft Thailand #2023<h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
                                 <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
-                            </div>
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Participate in making Opensource in
+                                    the Bangkok Opensource Hackathon. My project is Thai Land Area Ranking, where
+                                    everyone can rate their places on our website. Then it was arranged into tiers for
+                                    each area of ​​Thailand. To make it easier for people who want to find a new place
+                                    to live and for people with responsibilities to make changes. Let's work together to
+                                    fix communities with low tiers. #2023</h1>
+                            </center>
                         </div>
-                        <div class="hidden lg:block">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                                <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Plus! And we also went to report
-                                    the
-                                    matter together. Because Dongtong's bicycle was lost. So we get to know each other
-                                    better.</h1>
-                                <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/tong-police.JPG">
-                            </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Participate in Coding skills training
+                                    with 42Bangkok Discovery Piscine #2023</h1>
+                            </center>
                         </div>
                     </div>
 
-                    <!--Story Content for Mobile-->
-                    <div id="ourStoryContent_mobile" class="space-y-[50px] hidden">
-                        <div class="lg:hidden">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
-                                <center>
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/national-coding.JPG">
-                                    <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
-                                    </center>
-                                    <h1 class="mr-[20px] text-white text-[20px]">We participated in the competition on
-                                        National Coding Day 2023.</h1>
-                                </center>
-                            </div>
+
+
+                    <!--CERTIFICATE-->
+                    <h1 id="certificate" class="text-white text-[30px] mt-[90px] font-bold">Certificate</h1>
+                    <h4 class="text-white/40 mt-[30px]">This's my certificate i got.</h4>
+                    <!--Cartificate Desktop-->
+                    <div class="space-y-[50px] mt-[50px] hidden lg:block">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Certificate of participation in basic
+                                training Google Data Studio #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.png">
                         </div>
-                        <div class="lg:hidden">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
-                                <center>
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
-                                    <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
-                                    </center>
-                                    <h1 class="mr-[20px] text-white text-[20px]">We invited each other to join in
-                                        working on a project at the Bangkok Opensource Hackathon.</h1>
-                                </center>
-                            </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced
+                                learning and industry methods from AMI KMITL. #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
                         </div>
-                        <div class="lg:hidden">
-                            <div
-                                class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
-                                <center>
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/tong-police.JPG">
-                                    <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
-                                    </center>
-                                    <h1 class="mr-[20px] text-white text-[20px]">Plus! And we also went to report
-                                        the
-                                        matter together. Because Tong Tong's bicycle was lost. So we get to know each other
-                                        better.</h1>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create
+                                Deep Learning AI. #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">AI creation competition certificate
+                                AMI-Hackathon#2 national level gold medal award #2022</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming
+                                competition, new version. Age 18 years
+                                which is a part Part of the national competition, National Coding Challenge, at National
+                                Coding Day #2023</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Winner of the high school programming
+                                competition during Science Day Week, Sarawittaya School. #2023</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
+                        </div>
+                    </div>
+
+                    <!--Certificate Mobile-->
+                    <div class="space-y-[50px] mt-[50px] lg:hidden">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                            </div>
+                                <h1 class="mr-[20px] text-white text-[20px]">Certificate of participation in basic
+                                    training Google Data Studio #2022</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced learning
+                                    and industry methods from AMI KMITL. #2022</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create Deep
+                                    Learning AI. #2022</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">AI creation competition certificate
+                                    AMI-Hackathon#2 national level gold medal award #2022</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Participate in the Python Pro gramming
+                                    competition, new version. Age 18 years
+                                    which is a part Part of the national competition, National Coding Challenge, at
+                                    National Coding Day #2023</h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Winner of the high school programming
+                                    competition during Science Day Week, Sarawittaya School. #2023</h1>
+                            </center>
+                        </div>
+                    </div>
+
+
+                    <!--PROJECT-->
+                    <h1 id="project" class="text-white text-[30px] mt-[90px] font-bold">Project</h1>
+                    <h4 class="text-white/40 mt-[30px]">This's my project or side project i ever do it.</h4>
+                    <!--Project Desktop-->
+                    <div class="space-y-[50px] mt-[50px] hidden lg:block">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Create my school application on ios and
+                                android with Flutter #2021</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.png">
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
+                                target="_blank" class="w-[50%] mr-[20px] text-white text-[20px]">I create World and
+                                Avatar with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
+                                target="_blank">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.png">
+                            </a>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <a href="bit.ly/srv-lab" target="_blank"
+                                class="w-[50%] mr-[20px] text-white text-[20px]">Create computer lab signing for my
+                                school and create analysis for teacher. #2022</a>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <a href="bit.ly/srv-lab" target="_blank">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.png">
+                            </a>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
+                                target="_blank" class="w-[50%] mr-[20px] text-white text-[20px]">Nanami Discord Bot
+                                #2023</a>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
+                                target="_blank">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.png">
+                            </a>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <a href="http://bilishare.tensormik.com" target="_blank"
+                                class="w-[50%] mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can
+                                build your anime to social media story via Apple Shortcuts. Developed by NodeJS
+                                #2023</a>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <a href="http://bilishare.tensormik.com" target="_blank">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
+                            </a>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Portfolio Website</h1>
+                            <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.png">
+                        </div>
+                    </div>
+
+                    <!--Project Mobile-->
+                    <div class="space-y-[50px] mt-[50px] lg:hidden">
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Create my school application on ios and
+                                    android with Flutter #2021<h1>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
+                                    target="_blank">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.png">
+                                </a>
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
+                                    target="_blank" class="mr-[20px] text-white text-[20px]">I create World and Avatar
+                                    with Unity and Blender3D for VRChat. Now the World have 10,824Visitor #2022</a>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <a href="bit.ly/srv-lab" target="_blank">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.png">
+                                </a>
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <a href="bit.ly/srv-lab" target="_blank" class="mr-[20px] text-white text-[20px]">Create
+                                    computer lab signing for my school and create analysis for teacher. #2022</a>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
+                                    target="_blank">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.png">
+                                </a>
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
+                                    target="_blank" class="mr-[20px] text-white text-[20px]">Nanami Discord Bot
+                                    #2023</a>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <a href="http://bilishare.tensormik.com" target="_blank">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
+                                </a>
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <a href="http://bilishare.tensormik.com" target="_blank"
+                                    class="mr-[20px] text-white text-[20px]">Bilibili Story Builder: This's api can
+                                    build your anime to social media story via Apple Shortcuts. Developed by NodeJS
+                                    #2023</a>
+                            </center>
+                        </div>
+                        <div
+                            class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
+                            <center>
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.png">
+                                <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
+                                </center>
+                                <h1 class="mr-[20px] text-white text-[20px]">Portfolio Website #2023<h1>
+                            </center>
                         </div>
                     </div>
 
@@ -258,6 +578,8 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                </div>
             </div>
         </div>
     </div>
@@ -272,6 +594,7 @@
         <div></div> <!-- col3 -->
     </footer>
 </body>
+
 <script>
     //Menu
     let isToggleMenu = false;
@@ -283,56 +606,29 @@
     function hamberBTN() {
         isToggleMenu = !isToggleMenu
         if (isToggleMenu) {
-            mobileMenu.classList.replace("h-[0px]", "h-[100px]")
-            try {
-                h1.classList.add("rotate-45", "translate-y-[9px]")
-                h2.classList.add("opacity-0")
-                h3.classList.add("-rotate-45", "-translate-y-[7px]")
-            } catch (error) {
+            mobileMenu.classList.replace("h-[0px]", "h-[200px]")
 
-            }
+            h1.classList.add("rotate-45", "translate-y-[9px]")
+            h2.classList.add("opacity-0")
+            h3.classList.add("-rotate-45", "-translate-y-[7px]")
         }
         else {
-            mobileMenu.classList.replace("h-[100px]", "h-[0px]")
-            try {
-                h1.classList.remove("rotate-45", "translate-y-[9px]")
-                h2.classList.remove("opacity-0")
-                h3.classList.remove("-rotate-45", "-translate-y-[7px]")
-            } catch (error) {
+            mobileMenu.classList.replace("h-[200px]", "h-[0px]")
 
-            }
+            h1.classList.remove("rotate-45", "translate-y-[9px]")
+            h2.classList.remove("opacity-0")
+            h3.classList.remove("-rotate-45", "-translate-y-[7px]")
         }
     }
 
     //Close mobile menu after press some button
     function closeMobileMenu() {
-        mobileMenu.classList.replace("h-[100px]", "h-[0px]")
+        isToggleMenu = !isToggleMenu
+        mobileMenu.classList.replace("h-[200px]", "h-[0px]")
 
         h1.classList.remove("rotate-45", "translate-y-[9px]")
         h2.classList.remove("opacity-0")
         h3.classList.remove("-rotate-45", "-translate-y-[7px]")
-    }
-
-    //Read More Story
-    let isToggleReadMore = false;
-
-    function readMoreMenuBTN() {
-        let storyCard = document.getElementById("storyCard")
-        let readmoreButton = document.getElementById("readmore")
-        let ourStoryContent_desktop = document.getElementById("ourStoryContent_desktop")
-        let ourStoryContent_mobile = document.getElementById("ourStoryContent_mobile")
-
-        isToggleReadMore = !isToggleReadMore;
-        if (isToggleReadMore) {
-            ourStoryContent_desktop.classList.remove("hidden")
-            ourStoryContent_mobile.classList.remove("hidden")
-            readmoreButton.innerHTML = "Hide";
-        }
-        else {
-            ourStoryContent_desktop.classList.add("hidden")
-            ourStoryContent_mobile.classList.add("hidden")
-            readmoreButton.innerHTML = "Read more";
-        }
     }
 
     //Navbar
@@ -353,13 +649,89 @@
         window.addEventListener('scroll', handleScroll);
     });
 
+    //Like button
+    var likeBTN_Mobile = document.getElementById("likebutton_mobile");
+    var likeBTN_Desktop = document.getElementById("likebutton_desktop");
+    var liketext_Mobile = document.getElementById("liketext_mobile");
+    var liketext_Desktop = document.getElementById("liketext_desktop");
+
+    function updateLikeStatus() {
+        likeSendApi('count', function (likeValue) {
+            var isLike = getCookie("liked-check");
+
+            if (isLike == 'True') {
+                try {
+                    liketext_Mobile.classList.replace("text-white", "text-red-500");
+                    liketext_Desktop.classList.replace("text-white", "text-red-500");
+                } catch (e){console.log(e) }
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
+                likeBTN_Mobile.classList.add("bg-white");
+                likeBTN_Desktop.classList.add("bg-white");
+            } else {
+                try {
+                    liketext_Mobile.classList.replace("text-red-500", "text-white");
+                    liketext_Desktop.classList.replace("text-red-500", "text-white");
+                } catch { }
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
+                likeBTN_Mobile.classList.remove("bg-white");
+                likeBTN_Desktop.classList.remove("bg-white");
+            }
+        });
+    }
+
+    // Call the function initially
+    updateLikeStatus();
+    likeSendApi('visit', function (visitvalue) { });
+
+    // Set up an interval to call the function every 1 min
+    setInterval(updateLikeStatus, 60000);
+
+
+    //LikeSend
+    function likesend() {
+        var isLikeToggle = getCookie("liked-check")
+
+        if (isLikeToggle == 'True') {
+            //for unlike (unavailable)
+
+            // try {
+            //     liketext.classList.replace("text-red-500", "text-white")
+            // } catch { }
+            // liketext.innerHTML = '<i id="likeicon" class="fa fa-heart-o mr-2"></i>Like me'; //Set new content when unliked
+            // likeBTN.classList.remove("bg-white")
+        } else {
+            setCookie("liked-check", "True", 30);
+
+            try {
+                liketext_Mobile.classList.replace("text-white", "text-red-500")
+                liketext_Desktop.classList.replace("text-white", "text-red-500")
+            } catch { }
+            liketext_Mobile.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
+            liketext_Desktop.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
+            likeBTN_Mobile.classList.add("bg-white")
+            likeBTN_Desktop.classList.add("bg-white")
+
+            likeSendApi('like', function (likeValue) {
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+            });
+        }
+    }
+
 </script>
 
-</html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     .prompt-font {
         font-family: "Prompt", sans-serif;
+    }
+
+    @media (min-width: 768px) {}
+
+    html {
+        scroll-behavior: smooth;
     }
 </style>
