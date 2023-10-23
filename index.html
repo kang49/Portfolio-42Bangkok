@@ -678,16 +678,15 @@
                 likeBTN_Mobile.classList.remove("bg-white");
                 likeBTN_Desktop.classList.remove("bg-white");
             }
-            likeSendApi('visit', function (visitvalue) { });
         });
     }
 
     // Call the function initially
     updateLikeStatus();
+    likeSendApi('visit', function (visitvalue) { });
 
-    // Set up an interval to call the function every 10 seconds
-    setInterval(updateLikeStatus, 10000); // 10000 milliseconds = 10 seconds
-
+    // Set up an interval to call the function every 1 min
+    setInterval(updateLikeStatus, 60000);
 
 
     //LikeSend
