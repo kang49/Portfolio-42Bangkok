@@ -122,9 +122,9 @@
             </div>
             <div>
                 <div class="px-[10px] h-10px mt-[50px] lg:mt-[350px]">
-                    <button onclick="likesend()" class="lg: block">
+                    <button onclick="likesend()" class="lg:block hidden">
                         <div id="likebutton"
-                            class="rounded-[40px] ml-[50px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
+                            class="rounded-[40px] lg:ml-[50px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
                             <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
                                     class="fa fa-heart-o mr-2"></i>.. Like me</h4>
                         </div>
@@ -650,25 +650,38 @@
     });
 
     //Like button
-    const likeBTN = document.getElementById("likebutton")
-    const liketext = document.getElementById("liketext")
-    likeSendApi('count', function (likeValue) {
-        var isLike = getCookie("liked-check")
-        if (isLike == 'True') {
-            try {
-                liketext.classList.replace("text-white", "text-red-500")
-            } catch { }
-            liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;; //Set new content when liked
-            likeBTN.classList.add("bg-white")
-        } else {
-            try {
-                liketext.classList.replace("text-red-500", "text-white")
-            } catch { }
-            liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; //Set new content when unliked
-            likeBTN.classList.remove("bg-white")
-        }
-        likeSendApi('visit', function (visitvalue) { });
-    });
+    var likeBTN = document.getElementById("likebutton");
+    var liketext = document.getElementById("liketext");
+
+    function updateLikeStatus() {
+        likeSendApi('count', function (likeValue) {
+            var isLike = getCookie("liked-check");
+
+            if (isLike == 'True') {
+                try {
+                    liketext.classList.replace("text-white", "text-red-500");
+                } catch (e){console.log(e) }
+                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
+                console.log(liketext.innerHTML)
+                likeBTN.classList.add("bg-white");
+            } else {
+                try {
+                    liketext.classList.replace("text-red-500", "text-white");
+                } catch { }
+                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
+                likeBTN.classList.remove("bg-white");
+            }
+            likeSendApi('visit', function (visitvalue) { });
+        });
+    }
+
+    // Call the function initially
+    updateLikeStatus();
+
+    // Set up an interval to call the function every 10 seconds
+    setInterval(updateLikeStatus, 10000); // 10000 milliseconds = 10 seconds
+
+
 
     //LikeSend
     function likesend() {
