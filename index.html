@@ -112,9 +112,9 @@
                     </h1>
                     <h4 class="text-white text-[40px] font-bold">I'm Kan .</h4>
                     <button onclick="likesend()" class="lg:hidden">
-                        <div id="likebutton"
+                        <div id="likebutton_mobile"
                             class="rounded-[40px] mt-[10px] p-[5px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
-                            <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
+                            <h4 id="liketext_mobile" class="flex items-center text-white"><i id="likeicon"
                                     class="fa fa-heart-o mr-2"></i>.. Like me</h4>
                         </div>
                     </button>
@@ -123,9 +123,9 @@
             <div>
                 <div class="px-[10px] h-10px mt-[50px] lg:mt-[350px]">
                     <button onclick="likesend()" class="lg:block hidden">
-                        <div id="likebutton"
+                        <div id="likebutton_desktop"
                             class="rounded-[40px] lg:ml-[50px] w-[150px] px-2 py-2 text-white border-[2px] border-solid border-[#8b8b8b] flex justify-center">
-                            <h4 id="liketext" class="flex items-center text-white"><i id="likeicon"
+                            <h4 id="liketext_desktop" class="flex items-center text-white"><i id="likeicon"
                                     class="fa fa-heart-o mr-2"></i>.. Like me</h4>
                         </div>
                     </button>
@@ -650,8 +650,10 @@
     });
 
     //Like button
-    var likeBTN = document.getElementById("likebutton");
-    var liketext = document.getElementById("liketext");
+    var likeBTN_Mobile = document.getElementById("likebutton_mobile");
+    var likeBTN_Desktop = document.getElementById("likebutton_desktop");
+    var liketext_Mobile = document.getElementById("liketext_mobile");
+    var liketext_Desktop = document.getElementById("liketext_desktop");
 
     function updateLikeStatus() {
         likeSendApi('count', function (likeValue) {
@@ -659,17 +661,22 @@
 
             if (isLike == 'True') {
                 try {
-                    liketext.classList.replace("text-white", "text-red-500");
+                    liketext_Mobile.classList.replace("text-white", "text-red-500");
+                    liketext_Desktop.classList.replace("text-white", "text-red-500");
                 } catch (e){console.log(e) }
-                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
-                console.log(liketext.innerHTML)
-                likeBTN.classList.add("bg-white");
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
+                likeBTN_Mobile.classList.add("bg-white");
+                likeBTN_Desktop.classList.add("bg-white");
             } else {
                 try {
-                    liketext.classList.replace("text-red-500", "text-white");
+                    liketext_Mobile.classList.replace("text-red-500", "text-white");
+                    liketext_Desktop.classList.replace("text-red-500", "text-white");
                 } catch { }
-                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
-                likeBTN.classList.remove("bg-white");
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart-o mr-2"></i>${likeValue} Like me`; // Set new content when unliked
+                likeBTN_Mobile.classList.remove("bg-white");
+                likeBTN_Desktop.classList.remove("bg-white");
             }
             likeSendApi('visit', function (visitvalue) { });
         });
@@ -699,13 +706,17 @@
             setCookie("liked-check", "True", 30);
 
             try {
-                liketext.classList.replace("text-white", "text-red-500")
+                liketext_Mobile.classList.replace("text-white", "text-red-500")
+                liketext_Desktop.classList.replace("text-white", "text-red-500")
             } catch { }
-            liketext.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
-            likeBTN.classList.add("bg-white")
+            liketext_Mobile.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
+            liketext_Desktop.innerHTML = '<i id="likeicon" class="fa fa-heart mr-2"></i>Liked me'; //Set new content when liked
+            likeBTN_Mobile.classList.add("bg-white")
+            likeBTN_Desktop.classList.add("bg-white")
 
             likeSendApi('like', function (likeValue) {
-                liketext.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+                liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
+                liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`;
             });
         }
     }
