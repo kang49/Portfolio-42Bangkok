@@ -1,7 +1,7 @@
 function likeSendApi(arr, callback) {
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `https://kanport-like-couter.kankaweeisci123.workers.dev/${arr}`, true);
+    xhr.open('GET', `https://kanport-like-couter.kankawee.workers.dev/${arr}`, true);
 
     xhr.onload = function () {
         if (xhr.status === 200) {

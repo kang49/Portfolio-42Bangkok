@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="UTF-8">
+    <html lang="en">
+    <meta name="description" content="kankawee aramrak portfolio">
     <title>Kan Aramrak Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
     <link href='/assets/snow.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="liked-checking.js"></script>
@@ -57,7 +61,7 @@
                         <a href="#contact">Contact</a>
                     </div>
                     <div>
-                        <a href="#project">Project</a>
+                        <a href="#project" aria-label="Readmore kankawee project">Project</a>
                     </div>
                     <div>
                         <a href="#certificate">Certificate</a>
@@ -66,7 +70,7 @@
                         <a href="#activities">Activities</a>
                     </div>
                     <div>
-                        <a href="#aboutme">About me</a>
+                        <a href="#aboutme" aria-label="Readmore about kankawee">About me</a>
                     </div>
                     <div>
                         <a href="#toppage">Home</a>
@@ -93,7 +97,7 @@
                         Certificate</a>
                 </div>
                 <div>
-                    <a href="#project" onclick="closeMobileMenu()">
+                    <a href="#project" aria-label="Readmore kankawee project" onclick="closeMobileMenu()">
                         Project</a>
                 </div>
                 <div>
@@ -104,7 +108,8 @@
 
         <div id="toppage">
             <div class="pt-[150px] lg:ml-[200px] lg:pt-[100px]">
-                <img class="w-[350px] object-contain lg:w-[500px] lg:pt-[90px] lg:absolute" src="assets/img/my-pic.png">
+                <img class="w-[350px] object-contain lg:w-[500px] lg:pt-[90px] lg:absolute" src="assets/img/my-pic.webp"
+                    alt="kankawee aramrak">
                 <div class="ml-[30px] pt-[60px] lg:ml-[350px]">
                     <h1
                         class="text-[#B5F2FF] font-bold text-[70px] drop-shadow-[0_0px_10px_rgba(181,242,255,1)] lg:text-[100px]">
@@ -140,7 +145,8 @@
                     <h4 class="text-white/40 mt-[30px]">What am i doing?</h4>
 
                     <img class="w-max h-max rounded-[20px] py-[10px] ml-[10px] mt-[30px] lg:max-w-[50%] lg:w-[70%]"
-                        src="https://lanyard.cnrad.dev/api/605305608085831681?theme=light&bg=dbecf6&animated=false&hideDiscrim=true&borderRadius=30px&showDisplayName=true">
+                        src="https://lanyard.cnrad.dev/api/605305608085831681?theme=light&bg=dbecf6&animated=false&hideDiscrim=true&borderRadius=30px&showDisplayName=true"
+                        alt="meta_keen discord status">
 
                     <h4 id="aboutme" class="text-white/40 mt-[50px]">Who am i ?</h4>
                     <h1 class="text-white text-[30px] font-bold">About me</h1>
@@ -186,7 +192,8 @@
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Enter the KMITL OpenHouse activity
                                 Training on AI and Robotics #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.webp"
+                                alt="Oph-kmitl kankawee">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
@@ -195,7 +202,7 @@
                                 AMI-Hackathon#2 national level
                                 In the finals on behalf of the TensorMiK team #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.webp" alt="ami hackathon">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
@@ -203,7 +210,8 @@
                                 system
                                 with Microsoft Thailand. #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.webp"
+                                alt="Microsoft Learn">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
@@ -214,14 +222,15 @@
                                 people with responsibilities to make changes. Let's work together to fix communities
                                 with low tiers. #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.webp"
+                                alt="Bangkok Opensource">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in Coding skills training
                                 with 42Bangkok Discovery Piscine #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.webp" alt="42Bangkok kankawee">
                         </div>
                     </div>
 
@@ -230,7 +239,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Oph-kmitl.webp"
+                                    alt="Oph-kmitl kankawee">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Enter the KMITL OpenHouse activity
@@ -240,7 +250,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-hac.webp"
+                                    alt="ami hackathon">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Entered the final round of the AI
@@ -252,7 +263,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Microsoft-Azure-Presents.webp"
+                                    alt="Microsoft Learn">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Attend training on the Azure Cloud system
@@ -262,7 +274,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/bkk_hac.webp"
+                                    alt="Bangkok Opensource">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Participate in making Opensource in
@@ -276,7 +289,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/my42.webp"
+                                    alt="42Bangkok kankawee">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Participate in Coding skills training
@@ -297,47 +311,52 @@
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Certificate of participation in basic
                                 training Google Data Studio #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.webp"
+                                alt="kankawee google datastudio">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced
                                 learning and industry methods from AMI KMITL. #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.webp">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create
                                 Deep Learning AI. #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.webp"
+                                alt="cira core kankawee">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">AI creation competition certificate
                                 AMI-Hackathon#2 national level gold medal award #2022</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.webp"
+                                alt="kankawee aramrak hackathon">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in the Python competition at National Coding Day #2023</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Participate in the Python competition
+                                at National Coding Day #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.webp">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Winner of the high school programming
                                 competition during Science Day Week, Sarawittaya School. #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.webp">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
-                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">42Bangkok KMITL Discovery Piscine High School successfully #2023</h1>
+                            <h1 class="w-[50%] mr-[20px] text-white text-[20px]">42Bangkok KMITL Discovery Piscine High
+                                School successfully #2023</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/42DP-HighSchool2023.jpg">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/42DP-HighSchool2023.webp">
                         </div>
                     </div>
 
@@ -346,7 +365,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-datastudio.webp"
+                                    alt="kankawee google datastudio">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Certificate of participation in basic
@@ -356,7 +376,7 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-oph.webp">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Join AMI Openhouse, see advanced learning
@@ -366,7 +386,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/ami-cira-training.webp"
+                                    alt="cira core kankawee">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Trained in using CiRA Core to create Deep
@@ -376,7 +397,8 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/Ami-hac-cert.webp"
+                                    alt="kankawee aramrak hackathon">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">AI creation competition certificate
@@ -386,16 +408,17 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-national-coding-day.webp">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">Participate in the Python competition at National Coding Day #2023</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">Participate in the Python competition at
+                                    National Coding Day #2023</h1>
                             </center>
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/cert-srv-sci-day-computer.webp">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Winner of the high school programming
@@ -405,10 +428,11 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/42DP-HighSchool2023.jpg">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/42DP-HighSchool2023.webp">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <h1 class="mr-[20px] text-white text-[20px]">42Bangkok KMITL Discovery Piscine High School successfully #2023</h1>
+                                <h1 class="mr-[20px] text-white text-[20px]">42Bangkok KMITL Discovery Piscine High
+                                    School successfully #2023</h1>
                             </center>
                         </div>
                     </div>
@@ -424,7 +448,7 @@
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Create my school application on ios and
                                 android with Flutter #2021</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.webp">
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
@@ -434,7 +458,8 @@
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
                                 target="_blank">
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.webp"
+                                    alt="kankawee vrchat">
                             </a>
                         </div>
                         <div
@@ -444,7 +469,8 @@
                                 school and create analysis for teacher. #2022</a>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <a href="https://bit.ly/srv-lab" target="_blank">
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.webp"
+                                    alt="สารวิทยา">
                             </a>
                         </div>
                         <div
@@ -455,7 +481,8 @@
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
                                 target="_blank">
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.webp"
+                                    alt="nanami">
                             </a>
                         </div>
                         <div
@@ -466,14 +493,14 @@
                                 #2023</a>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
                             <a href="http://bilishare.tensormik.com" target="_blank">
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.webp" alt="Bilibili">
                             </a>
                         </div>
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-[30px] py-2 w-[80%] flex items-center">
                             <h1 class="w-[50%] mr-[20px] text-white text-[20px]">Portfolio Website</h1>
                             <center class="bg-white/40 h-[100px] w-[2px] mr-[30px] rounded-full"></center>
-                            <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.png">
+                            <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.webp" alt="kankawee">
                         </div>
                     </div>
 
@@ -482,7 +509,7 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-app.webp">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Create my school application on ios and
@@ -494,7 +521,8 @@
                             <center>
                                 <a href="https://en.vrcw.net/world/detail/wrld_6e447f3a-c9c0-49b4-a5bf-b098b84fb585"
                                     target="_blank">
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.png">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/vrc-project.webp"
+                                        alt="kankawee vrchat">
                                 </a>
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
@@ -507,11 +535,13 @@
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
                                 <a href="https://bit.ly/srv-lab" target="_blank">
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.png">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/srv-computerLab-sign.webp"
+                                        alt="สารวิทยา">
                                 </a>
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
-                                <a href="https://bit.ly/srv-lab" target="_blank" class="mr-[20px] text-white text-[20px]">Create
+                                <a href="https://bit.ly/srv-lab" target="_blank"
+                                    class="mr-[20px] text-white text-[20px]">Create
                                     computer lab signing for my school and create analysis for teacher. #2022</a>
                             </center>
                         </div>
@@ -520,7 +550,8 @@
                             <center>
                                 <a href="https://discord.com/api/oauth2/authorize?client_id=1109721426279280660&permissions=8&scope=bot"
                                     target="_blank">
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.png">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/nanami-bot-profile.webp"
+                                        alt="nanami">
                                 </a>
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
@@ -533,7 +564,8 @@
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
                                 <a href="http://bilishare.tensormik.com" target="_blank">
-                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.png">
+                                    <img class="w-[250px] rounded-[20px]" src="/assets/img/bili-share.webp"
+                                        alt="Bilibili">
                                 </a>
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
@@ -546,7 +578,7 @@
                         <div
                             class="h-max bg-gradient-to-r from-[#b82992]/50 to-[#c7768a]/50 rounded-[20px] px-3 py-2 w-[95%] items-center">
                             <center>
-                                <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.png">
+                                <img class="w-[250px] rounded-[20px]" src="/assets/img/kan-web.webp" alt="kankawee">
                                 <center class="bg-white/40 h-[2px] w-full mr-[30px] rounded-full my-[20px]">
                                 </center>
                                 <h1 class="mr-[20px] text-white text-[20px]">Portfolio Website #2023<h1>
@@ -560,24 +592,24 @@
                     <h4 class="text-white/40 mt-[30px]">Want to connect me? Here this.</h4>
                     <div class="mt-[50px] rounded-[36px] max-w-[470px] py-2">
                         <div class="max-w-[400px] grid grid-cols-5 my-[20px]">
-                            <a href="https://github.com/kang49" target="_blank"
+                            <a href="https://github.com/kang49" aria-label="Kankawee Github" target="_blank"
                                 class="flex justify-center max-w-[50px]">
-                                <img class="w-[50px] rounded-[16px]" src="assets/img/github-logo.png">
+                                <img class="w-[50px] rounded-[16px]" src="assets/img/github-logo.webp">
                             </a> <!--col1-->
-                            <a href="https://discord.com/users/605305608085831681" target="_blank"
+                            <a href="https://discord.com/users/605305608085831681" aria-label="Kankawee Discord" target="_blank"
                                 class="flex justify-center max-w-[50px]">
-                                <img class="w-[50px] rounded-[16px]" src="assets/img/discord-logo.png">
+                                <img class="w-[50px] rounded-[16px]" src="assets/img/discord-logo.webp">
                             </a> <!--col2-->
-                            <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/" target="_blank"
+                            <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/" aria-label="Kankawee Aramrak" target="_blank"
                                 class="flex justify-center max-w-[50px]">
-                                <img class="w-[50px] rounded-[16px]" src="assets/img/linkedin-logo.png">
+                                <img class="w-[50px] rounded-[16px]" src="assets/img/linkedin-logo.webp">
                             </a> <!--col3-->
-                            <a href="https://www.instagram.com/kan_g49/" target="_blank"
+                            <a href="https://www.instagram.com/kan_g49/" aria-label="kan_g49" target="_blank"
                                 class="flex justify-center max-w-[50px]">
-                                <img class="w-[50px] rounded-[16px]" src="assets/img/ig-logo.png">
+                                <img class="w-[50px] rounded-[16px]" src="assets/img/ig-logo.webp">
                             </a> <!--col4-->
                             <div class="flex justify-center items-center">
-                                <a href="https://www.buymeacoffee.com/metakeen" target="_blank">
+                                <a href="https://www.buymeacoffee.com/metakeen" aria-label="kankawee donate" target="_blank">
                                     <div
                                         class="rounded-[40px] p-[5px] px-2 py-2 text-white bg-gradient-to-r from-[#5DE0E6] to-[#004AAD]">
                                         <h4 class="flex items-center">Donate</h4>
@@ -672,7 +704,7 @@
                 try {
                     liketext_Mobile.classList.replace("text-white", "text-red-500");
                     liketext_Desktop.classList.replace("text-white", "text-red-500");
-                } catch (e){console.log(e) }
+                } catch (e) { console.log(e) }
                 liketext_Mobile.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
                 liketext_Desktop.innerHTML = `<i id="likeicon" class="fa fa-heart mr-2"></i>${likeValue} Like me`; // Set new content when liked
                 likeBTN_Mobile.classList.add("bg-white");
